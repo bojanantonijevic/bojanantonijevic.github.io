@@ -1,0 +1,95 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Project | Chat.io</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="javascript:(void);" class="logo">Web socket chat app</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li><a href="index.html">Home</a></li>
+							<li class="active"><a href="generic.html">Game</a></li>
+							<li><a href="file/bojanresume.pdf" target="_blank" download >PDF Resume</a></li>
+						</ul>
+						<ul class="icons">
+							<li><a href="https://www.instagram.com/boki.antonijevic/?hl=en" target="_blank" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+							<li><a href="https://github.com/bojanantonijevic" target="_blank" class="icon fa-github"><span class="label">GitHub</span></a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<section class="post">
+								<header class="major">
+									
+									<h1>websockets<br />
+									and what do do with it</h1>
+
+									<p>The WebSocket protocol enables interaction between a web client (such as a browser) and a web server with lower overheads, facilitating real-time data transfer from and to the server. <br />
+									Unlike HTTP, WebSocket provides full-duplex communication. The WebSocket protocol is currently supported in most major browsers including Google Chrome, Microsoft Edge, Internet Explorer, Firefox, Safari and Opera. </p>
+									<p>Can be used in: Real-time analytics, Instant messaging and chat, Binary streaming, Document collaboration</p>
+
+									
+								</header>
+								<div id="iframeHolder"></div>
+								<div class="image main"><img src="images/chat.png" alt="" style="border:2px solid #25272E;"/></div>
+								
+
+								<ul class="actions special">
+										<li><a  class="button frame">Demo Video</a></li>
+										<li><a  href="https://github.com/bojanantonijevic/soket.io.chat" target="_blank" class="button">See code</a></li>
+								</ul>
+
+
+								<h3>Overview</h3>
+								<p> <a href="https://socket.io/" target="_blank">Socket.IO</a> enables real-time, bidirectional and event-based communication.
+										It works on every platform, browser or device, focusing equally on reliability and speed.</p>
+								
+								
+							</section>
+
+					</div>
+
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script type="text/javascript">
+			$(function(){
+			$('.frame').click(function(){ 
+
+			    if(!$('#iframe').length) {
+
+			            $('.image').hide("slow").html('<iframe id="iframe" src="images/record.webm" width="100%" height="600"></iframe>').show('slow');  
+			    }
+			    
+			});
+
+			});
+			</script>
+
+	</body>
+</html>

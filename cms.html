@@ -1,0 +1,105 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Project | CMS</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="javascript:(void);" class="logo">Custom CMS </a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li><a href="index.html">Home</a></li>
+							<li class="active"><a href="cms.html">Content Management System</a></li>
+							<li><a href="file/bojanresume.pdf" target="_blank" download >PDF Resume</a></li>
+						</ul>
+						<ul class="icons">
+							<li><a href="https://www.instagram.com/boki.antonijevic/?hl=en" target="_blank" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+							<li><a href="https://github.com/bojanantonijevic" target="_blank" class="icon fa-github"><span class="label">GitHub</span></a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<section class="post">
+								<header class="major">
+									
+									<h1>Why I Chose <br />
+									To Write My Own</h1>
+									<p>I wanted to feel and go through all the aspects that are necessary for building a big project like this. WordPress came like an inspiration. This blog entry system allows you to:</p>
+									<ul style="text-align: left;">
+										<li>Register and login as an user</li>
+										<li>Reset your password with the recovery email</li>
+										<li>Get Admin or Subscriber privileges</li>
+										<li>Edit your profile</li>
+										<li>CRUD Categories</li>
+										<li>CRUD Posts</li>
+										<li>CRUD New Users</li>
+										<li>Search Posts</li>
+										<li>Leave, approve/decline comments</li>
+										<li>Admin Dashboard</li>
+										<li>Get live Graph of your users, posts, comments</li>	
+
+									</ul>
+								</header>
+								<div id="iframeHolder"></div>
+								<div class="image main"><img src="images/cms.png" alt="" style="border:2px solid #25272E;"/></div>
+								
+
+								<ul class="actions special">
+										<li><a  class="button frame">Demo</a></li>
+										<li><a  href="https://github.com/bojanantonijevic/custom-cms" target= "_blank" class="button">See code</a></li>
+										<li><a href="http://customcms.eximious.support/index.php" target="_blank" class="button">Visit Page</a></li>
+								</ul>
+
+
+								<h3>Overview</h3>
+								<p>If you would like to test drive it, use the default admin username: <span style="color:red;">root</span>  and password: <span style="color:red;">root</span> to login. Also, you can register a new user ( no  email validation will be required), you will get the "Subscriber" privileges which you can change under the "Profile" section. Subscribers will have restricted access in the Admin dashboard.</p>
+								<p>This is a work in progress, after the system security is improved, new features will be added.</p>
+								<!-- href="project/game/index.html" -->
+								
+							</section>
+
+					</div>
+
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script type="text/javascript">
+			$(function(){
+			$('.frame').click(function(){ 
+
+			    if(!$('#iframe').length) {
+
+			            $('.image').hide("slow").html('<iframe id="iframe" src="http://customcms.eximious.support/index.php" width="100%" height="600"></iframe>').show('slow');  
+			    }
+			    
+			});
+
+			});
+			</script>
+
+	</body>
+</html>
